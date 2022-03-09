@@ -13,7 +13,7 @@ import youtube from './img/youtube.svg'
 import linkedin from './img/linkedin.svg'
 import insta from './img/insta.svg'
 import snapchat from './img/snapchat.svg'
-
+import ResearchCard from './ResearchCard'
 
 
 
@@ -39,7 +39,7 @@ return (
                 transition = {{duration: 2}}
 >
 
-<motion.nav className = "fullMenu grid grid-cols-1"
+<motion.nav className = "fullMenu grid grid-cols-1 content xl:hidden"
               animate={isOpen ? "open" : "closed"}
               variants={variants}
               transition = {{stiffness: 3}}
@@ -136,6 +136,8 @@ return (
 
         </div>
 
+
+
         </motion.div>
 
    
@@ -157,8 +159,7 @@ return (
     
     <div class = "footer grid-cols-1 mx-auto">
                   <p> © 2022 STUDIO KA IL All Rights Reserved. </p>
-     </div>
-
+    </div>
 
 </motion.div>
 

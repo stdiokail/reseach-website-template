@@ -3,15 +3,10 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-    height: 100%;
 }
 
-.html {
-  height: 100%;
-}
 
-.fullHome {
- }
+
 
 .logo, .menu {
   transition-duration: 0.7s;
@@ -57,6 +52,7 @@ opacity: 0.5;
 
 .titlename {
   font-size: 40px;
+  padding-top: 70px;
   margin-right:120px;
   margin-left: 120px;
   color: #F0E4D6;

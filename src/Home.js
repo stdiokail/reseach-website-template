@@ -1,5 +1,5 @@
 import { HashRouter as Router, Route, Switch, Link, useLocation } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import React, { useState } from "react";
 import Research from './Research.js'
 import landing from './img/landing.svg'
@@ -39,7 +39,7 @@ function App()
                 transition = {{duration: 2}}
     >
 
-  <motion.nav className = "fullMenu grid grid-cols-1"
+  <motion.nav className = "fullMenu grid grid-cols-1 content xl:hidden"
               animate={isOpen ? "open" : "closed"}
               variants={variants}
               transition = {{stiffness: 3}}
@@ -124,7 +124,7 @@ function App()
                   <p> © 2022 STUDIO KA IL All Rights Reserved. </p>
               </div>
     </motion.div>
-  
+    
     </div>
   );
 }

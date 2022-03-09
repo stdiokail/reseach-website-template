@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reseach-website-template/static/css/main.7a0f530f.css",
-    "main.js": "/reseach-website-template/static/js/main.029ab9e9.js",
+    "main.css": "/reseach-website-template/static/css/main.6832c890.css",
+    "main.js": "/reseach-website-template/static/js/main.2042a5e6.js",
     "static/js/787.a780a91b.chunk.js": "/reseach-website-template/static/js/787.a780a91b.chunk.js",
     "static/media/publications.svg": "/reseach-website-template/static/media/publications.d3dc36681c129465759494b7db28b5bb.svg",
     "static/media/tools.svg": "/reseach-website-template/static/media/tools.1e756cc0e363822e77c84bf766fe7ded.svg",
@@ -17,12 +17,12 @@
     "static/media/linkedin.svg": "/reseach-website-template/static/media/linkedin.f9fb53b78961d5fdd93368970d3d9eb8.svg",
     "static/media/asterisk.svg": "/reseach-website-template/static/media/asterisk.4eeab9969437b6844ba1d2d508c99931.svg",
     "static/media/facebook.svg": "/reseach-website-template/static/media/facebook.992cdb6e40589d96ff5a0466cdf0c109.svg",
-    "main.7a0f530f.css.map": "/reseach-website-template/static/css/main.7a0f530f.css.map",
-    "main.029ab9e9.js.map": "/reseach-website-template/static/js/main.029ab9e9.js.map",
+    "main.6832c890.css.map": "/reseach-website-template/static/css/main.6832c890.css.map",
+    "main.2042a5e6.js.map": "/reseach-website-template/static/js/main.2042a5e6.js.map",
     "787.a780a91b.chunk.js.map": "/reseach-website-template/static/js/787.a780a91b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a0f530f.css",
-    "static/js/main.029ab9e9.js"
+    "static/css/main.6832c890.css",
+    "static/js/main.2042a5e6.js"
   ]
 }

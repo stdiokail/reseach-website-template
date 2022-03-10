@@ -12,6 +12,8 @@ import snapchat from './img/snapchat.svg'
 import youtube from './img/youtube.svg'
 import asterisk from './img/asterisk.svg'
 import circle from './img/circle.svg'
+import News from './News.js'
+import Contact from './Contact.js'
 
 
 
@@ -52,8 +54,8 @@ function App()
                 <div class="menu-items-top">    </div>
                 <div class="menu-items" onClick={() => setIsOpen(isOpen => !isOpen)}  > APPROACH</div>
                 <div class="menu-items"> <Link to="/Research"> RESEARCH </Link></div> 
-                <div class="menu-items">NEWS</div>
-                <div class="menu-items">CONTACT</div>
+                <div class="menu-items"> <Link to="/News"> NEWS </Link></div>
+                <div class="menu-items"> <Link to="/Contact"> CONTACT </Link></div>
                 <div class="menu-items-top">    </div>
             </div>
 
@@ -92,8 +94,8 @@ function App()
 <div class = "leftside">
 <div class = "large-menu hidden xl:grid grid-cols-3">
                 <Link to="/Research"><a className = "MenuList" href="./">RESEARCH</a> </Link>
-                <a className = "MenuList" href="./">LATEST NEWS</a>
-                <a className = "MenuList" href="./">CONTACT</a>
+                <Link to="/News"> <a className = "MenuList" href="./">LATEST NEWS</a> </Link>
+                <Link to="/Contact"> <a className = "MenuList" href="./">CONTACT</a> </Link>
                 </div>
     <div class = "titlename xl:pt-15% " >OUR APPROACH</div>
     <p class = "description ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare. Duis sagittis pellentesque lectus, in aliquet lectus suscipit nec. 

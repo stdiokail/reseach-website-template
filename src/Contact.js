@@ -51,9 +51,9 @@ return (
             <div class="menu-list divide-y-1">
                 <div class="menu-items-top">    </div>
                 <div class="menu-items" > <Link to="/">  APPROACH </Link></div>
-                <div class="menu-items" onClick={() => setIsOpen(isOpen => !isOpen)}> RESEARCH </div> 
+                <div class="menu-items" > <Link to="/Contact">  RESEARCH </Link> </div> 
                 <div class="menu-items"> <Link to="/News"> NEWS </Link> </div>
-                <div class="menu-items"> <Link to="/Contact"> CONTACT </Link> </div>
+                <div class="menu-items" onClick={() => setIsOpen(isOpen => !isOpen)}> CONTACT </div>
                 <div class="menu-items-top">    </div>
             </div>
 
@@ -91,51 +91,32 @@ return (
             </div>
         </div>
 
-        <div class = "pageTitle xl:grid grid-cols-2"> OUR RESEARCH </div> <div></div>
+        <div class = "pageTitle xl:grid grid-cols-2"> CONTACT</div> <div></div>
         
-        <div class = "grid grid-cols-1 xl:grid-cols-3 xl:px-60px">
+        
+        <div class = "contact-form grid grid-cols-1">
+            <div>
+            <textarea class = "message-input" 
+                            id = "message" 
+                            maxlength = "500" 
+                            rows = "1"
+                            cols = "50"
+                            > Enter message. </textarea>
+            </div>
 
-        <div class = "full-card xl:px-60px">
-        <img src={publications} alt={"publications"}  className="research-card-img" /> 
-        <div class = "research-description">
-        <div class = "research-title"> PUBLICATIONS </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare.
-        <br/>  <br/>
-        <button class = "basic-button">
-        PUBLICATIONS
-        </button>
+            <div>
+            <textarea class = "email-input" 
+                            id = "email" 
+                            maxlength = "8" 
+                            > Enter email address. </textarea>
+            </div>
+            <div>
+            <button class = "submit-button">
+                SUBMIT
+            </button>
+            </div>
         </div>
-        </div>
-
-
-        <div class = "full-card xl:px-60px">
-        <img src={research} alt={"research"}  className="research-card-img" /> 
-        <div class = "research-description">
-        <div class = "research-title"> RESEARCH AREAS </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare.
-        <br/>  <br/>
-        <button class = "basic-button">
-        RESEARCH AREAS
-        </button>
-        </div>
-        </div>
-
-
-        <div class = "full-card xl:px-60px">
-        <img src={tools} alt={"tools"}  className="research-card-img" /> 
-        <div class = "research-description">
-        <div class = "research-title"> TOOLS </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare.
-        <br/>  <br/>
-        <button class = "basic-button">
-        TOOLS
-        </button>
-        </div>
-        </div>
-
-
-        </div>
-
+            
 
 
         </motion.div>

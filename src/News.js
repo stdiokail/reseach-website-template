@@ -1,8 +1,3 @@
-import logo from './img/logo.svg'
-import menu from './img/menu.svg'
-import research from './img/research.svg'
-import tools from './img/tools.svg'
-import publications from './img/publications.svg'
 import asterisk from './img/asterisk.svg'
 import circle from './img/circle.svg'
 import { HashRouter as Router, Route, Switch, Link, useLocation } from 'react-router-dom';
@@ -15,6 +10,12 @@ import insta from './img/insta.svg'
 import snapchat from './img/snapchat.svg'
 import ResearchCard from './ResearchCard'
 import News from './News.js'
+import logo from './img/logo.svg'
+import menu from './img/menu.svg'
+import whereLM from './img/whereLM.svg'
+import whyLM from './img/whyLM.svg'
+import originLM from './img/originLM.svg'
+import whatLM from './img/whatLM.svg'
 import Contact from './Contact.js'
 
 
@@ -33,7 +34,7 @@ export default function App() {
 return (
 
 
-<motion.div class = "research"
+<motion.div class = "fullNews"
                 initial = {{ opacity: 0}}
                 animate = {{opacity: 1}}
                 transition = {{duration: 2}}
@@ -51,9 +52,9 @@ return (
             <div class="menu-list divide-y-1">
                 <div class="menu-items-top">    </div>
                 <div class="menu-items" > <Link to="/">  APPROACH </Link></div>
-                <div class="menu-items" onClick={() => setIsOpen(isOpen => !isOpen)}> RESEARCH </div> 
-                <div class="menu-items"> <Link to="/News"> NEWS </Link> </div>
-                <div class="menu-items"> <Link to="/Contact"> CONTACT </Link> </div>
+                <div class="menu-items" ><Link to="/Research"> RESEARCH </Link></div> 
+                <div class="menu-items"  onClick={() => setIsOpen(isOpen => !isOpen)}>  NEWS  </div>
+                <div class="menu-items" ><Link to="/Contact"> CONTACT </Link></div> 
                 <div class="menu-items-top">    </div>
             </div>
 
@@ -75,9 +76,9 @@ return (
 
 <div class="blank"><br/><br/></div>
 
-<div class = "page-menu hidden xl:grid grid-cols-6">
+<div class = "page-menu hidden xl:grid grid-cols-6 ">
     <div></div> <div></div>
-                <Link to="/"> <a className = "PageMenuList">APPROACH</a> </Link>
+    <Link to="/"> <a className = "PageMenuList">APPROACH</a> </Link>
                 <Link to="/Research"> <a className = "PageMenuList">RESEARCH</a> </Link>
                 <Link to="/News"> <a className = "PageMenuList">LATEST NEWS</a> </Link>
                 <Link to="/Contact"> <a className = "PageMenuList">CONTACT</a> </Link>
@@ -91,56 +92,18 @@ return (
             </div>
         </div>
 
-        <div class = "pageTitle xl:grid grid-cols-2"> OUR RESEARCH </div> <div></div>
-        
-        <div class = "grid grid-cols-1 xl:grid-cols-3 xl:px-60px">
-
-        <div class = "full-card xl:px-60px">
-        <img src={publications} alt={"publications"}  className="research-card-img" /> 
-        <div class = "research-description">
-        <div class = "research-title"> PUBLICATIONS </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare.
-        <br/>  <br/>
-        <button class = "basic-button">
-        PUBLICATIONS
-        </button>
-        </div>
-        </div>
+        <div class = "pageTitle xl:grid grid-cols-2"> LATEST NEWS </div> <div></div>
 
 
-        <div class = "full-card xl:px-60px">
-        <img src={research} alt={"research"}  className="research-card-img" /> 
-        <div class = "research-description">
-        <div class = "research-title"> RESEARCH AREAS </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare.
-        <br/>  <br/>
-        <button class = "basic-button">
-        RESEARCH AREAS
-        </button>
-        </div>
-        </div>
+       
 
+   <div class = "grid grid-cols-1 xl:grid-cols-2 xl:px-10% newscards">
+       <ResearchCard imgsrc = {whatLM} title = 'WHAT IS LOREM IPSUM?' description = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.' />
+       <ResearchCard imgsrc = {originLM} title = 'WHERE DOES LOREM IPSUM COME FROM?' description = 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.  ' />
+       <ResearchCard imgsrc = {whyLM} title = 'WHY DO WE USE LOREM IPSUM?' description = 'The point of using Lorem Ipsum is that it has a normal distribution of letters, as opposed to using &apos;Content here, content here&apos;, making it look like readable English. ' />
+       <ResearchCard imgsrc = {whereLM} title = 'WHERE CAN I GET LOREM IPSUM?' description = 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable.' />
 
-        <div class = "full-card xl:px-60px">
-        <img src={tools} alt={"tools"}  className="research-card-img" /> 
-        <div class = "research-description">
-        <div class = "research-title"> TOOLS </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare.
-        <br/>  <br/>
-        <button class = "basic-button">
-        TOOLS
-        </button>
-        </div>
-        </div>
-
-
-        </div>
-
-
-
-        </motion.div>
-
-   
+    </div>
 
     <div class = "socials-footer">
     <img src={logo} alt={"logo"}  className="logo-footer" /> 
@@ -157,6 +120,8 @@ return (
     </div>
     </div>
     
+    </motion.div>
+
     <div class = "footer grid-cols-1 mx-auto">
                   <p> © 2022 STUDIO KA IL All Rights Reserved. </p>
     </div>

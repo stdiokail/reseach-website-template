@@ -2,15 +2,14 @@
 
 export default function researchCard({imgsrc, title, description})  {
     return (
-        <div class = "full-card xl:px-60px">
-            <h1> sakljd</h1>
+        <div class = "full-card lg:px-60px">
         <img src={imgsrc} alt={"title"}  className="research-card-img" /> 
         <div class = "research-description">
-        <div class = "research-title"> {title} </div>
+        <div class = "news-title"> {title} </div>
         {description}
         <br/>  <br/>
         <button class = "basic-button">
-        {title}
+        READ MORE
         </button>
         </div>
         </div>

@@ -221,7 +221,8 @@ opacity: 0.5;
   color:#F5E6DA;
   padding: 10%;
   transition-duration: 1s;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .research-description:hover {
@@ -290,7 +291,7 @@ opacity: 0.5;
 
 .news-title {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 25px;
   color: #F5E6DA;
   border-bottom: 1px solid #F5E6DA;
   margin-bottom: 40px;

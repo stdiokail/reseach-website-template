@@ -7,16 +7,19 @@ import facebook from './img/facebook.svg'
 import youtube from './img/youtube.svg'
 import linkedin from './img/linkedin.svg'
 import insta from './img/insta.svg'
-import snapchat from './img/snapchat.svg'
 import ResearchCard from './ResearchCard'
 import News from './News.js'
 import logo from './img/logo.svg'
+import logobg from './img/logobg.svg'
 import menu from './img/menu.svg'
-import whereLM from './img/whereLM.svg'
-import whyLM from './img/whyLM.svg'
-import originLM from './img/originLM.svg'
-import whatLM from './img/whatLM.svg'
+import whereLM from './img/whereLM.jpg'
+import whyLM from './img/whyLM.jpg'
+import originLM from './img/originLM.jpg'
+import whatLM from './img/whatLM.jpg'
 import Contact from './Contact.js'
+import heroPage from './img/heroPage.svg'
+import asteriskblbg from './img/asteriskblbg.svg'
+
 
 
 export default function App() {
@@ -61,9 +64,7 @@ return (
             <div>
                 <img src={asterisk} alt={"asterisk"}  className="asterisk-menu" /> 
             </div>
-            <div>
-                <img src={circle} alt={"circle"}  className="circle-menu" /> 
-            </div>
+
             
 
 </motion.nav>
@@ -77,7 +78,9 @@ return (
 <div class="blank"><br/><br/></div>
 
 <div class = "page-menu hidden xl:grid grid-cols-6 ">
-    <div></div> <div></div>
+<div class = " col-span-2"> 
+    <img src={heroPage} alt={"illustration"} className="pageHero"/> 
+    </div>
     <Link to="/"> <a className = "PageMenuList">APPROACH</a> </Link>
                 <Link to="/Research"> <a className = "PageMenuList">RESEARCH</a> </Link>
                 <Link to="/News"> <a className = "PageMenuList">LATEST NEWS</a> </Link>
@@ -92,8 +95,12 @@ return (
             </div>
         </div>
 
-        <div class = "pageTitle xl:grid grid-cols-2"> LATEST NEWS </div> <div></div>
-
+        <div class = "pageTitle xl:grid grid-cols-2"> 
+        <div> NEWS </div> 
+        <div class = "hidden xl:grid">
+        <img src={asteriskblbg} alt={"asterisk"}  className="asterisk-page" />
+        </div>
+        </div>
 
        
 
@@ -106,17 +113,12 @@ return (
     </div>
 
     <div class = "socials-footer">
-    <img src={logo} alt={"logo"}  className="logo-footer" /> 
-     <div class = "grid grid-cols-9">
-    <div></div>
-    <div></div>
+    <img src={logobg} alt={"logo"}  className="logo-footer" /> 
+     <div class = "grid grid-cols-4">
     <img src={facebook} alt={"facebook"}  className="socials-icon" /> 
     <img src={youtube} alt={"youtube"}  className="socials-icon" /> 
     <img src={linkedin} alt={"linkedin"}  className="socials-icon" /> 
-    <img src={snapchat} alt={"snapchat"}  className="socials-icon" /> 
     <img src={insta} alt={"insta"}  className="socials-icon" /> 
-    <div></div>
-    <div></div>
     </div>
     </div>
     

@@ -8,9 +8,9 @@ import menu from './img/menu.svg'
 import facebook from './img/facebook.svg'
 import insta from './img/insta.svg'
 import linkedin from './img/linkedin.svg'
-import snapchat from './img/snapchat.svg'
 import youtube from './img/youtube.svg'
 import asterisk from './img/asterisk.svg'
+import asteriskbl from './img/asteriskbl.svg'
 import circle from './img/circle.svg'
 import News from './News.js'
 import Contact from './Contact.js'
@@ -62,9 +62,7 @@ function App()
             <div>
                 <img src={asterisk} alt={"asterisk"}  className="asterisk-menu" /> 
             </div>
-            <div>
-                <img src={circle} alt={"circle"}  className="circle-menu" /> 
-            </div>
+
             
 
 </motion.nav>
@@ -87,6 +85,7 @@ function App()
                
         </div>      
 <img src={landing} alt={"illustration"}/> 
+<img src={asteriskbl} alt={"asterisk"} className= "asterisk-home xl:hidden"/> 
 </div>
 
 </div>
@@ -97,6 +96,7 @@ function App()
                 <Link to="/News"> <a className = "MenuList" href="./">LATEST NEWS</a> </Link>
                 <Link to="/Contact"> <a className = "MenuList" href="./">CONTACT</a> </Link>
                 </div>
+    <div> <img src={asteriskbl} alt={"asterisk"} className= "asterisk-home-lg hidden xl:grid"/> </div>
     <div class = "titlename xl:pt-15% " >OUR APPROACH</div>
     <p class = "description ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare. Duis sagittis pellentesque lectus, in aliquet lectus suscipit nec. 
     <br/>
@@ -104,18 +104,12 @@ function App()
     Praesent porttitor turpis id lobortis imperdiet. Nullam sagittis est justo, vitae pulvinar erat hendrerit quis. Nulla aliquam orci vel ante vestibulum vestibulum. Duis sed volutpat neque, nec aliquam lacus. Curabitur molestie faucibus ultrices. Curabitur sollicitudin nisl sed erat semper, ac rhoncus augue porta.Nulla aliquam orci vel ante vestibulum vestibulum. Duis sed volutpat neque, nec aliquam lacus. Curabitur molestie faucibus ultrices. Curabitur sollicitudin nisl sed erat semper, ac rhoncus augue porta. 
  </p>
 
-<div class = "inNumbers xl:mx-10% ">
-<div class = "inNumbersTitle" >OUR APPROACH IN NUMBERS</div>
-   <div> <p class = "inNumbersText grid grid-cols-2"> 
-   <div> </div>
-    • 80% conducted offline <br/> • 200+ published papers <br/> •  $2b invested in research</p> </div>
-  </div>
 
-  <div class = "inNumbers xl:mx-10% grid grid-cols-5">
+
+  <div class = "socials-home xl:mx-10% grid grid-cols-4">
   <img src={facebook} alt={"facebook"} className = "social-icons" /> 
   <img src={insta} alt={"insta"} className = "social-icons"/> 
   <img src={youtube} alt={"youtube"} className = "social-icons"/> 
-  <img src={snapchat} alt={"snapchat"} className = "social-icons"/> 
   <img src={linkedin} alt={"linkedin"} className = "social-icons"/> 
   </div>
 </div>

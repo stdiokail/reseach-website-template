@@ -8,6 +8,7 @@ export default function researchCard({imgsrc, title, description})  {
         <div class = "news-title"> {title} </div>
         {description}
         <br/>  <br/>
+        <br/>  <br/>
         <button class = "basic-button">
         READ MORE
         </button>

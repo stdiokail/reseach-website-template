@@ -1,8 +1,9 @@
 import logo from './img/logo.svg'
+import logobg from './img/logobg.svg'
 import menu from './img/menu.svg'
-import research from './img/research.svg'
 import tools from './img/tools.svg'
 import publications from './img/publications.svg'
+import datasets from './img/datasets.svg'
 import asterisk from './img/asterisk.svg'
 import circle from './img/circle.svg'
 import { HashRouter as Router, Route, Switch, Link, useLocation } from 'react-router-dom';
@@ -12,10 +13,12 @@ import facebook from './img/facebook.svg'
 import youtube from './img/youtube.svg'
 import linkedin from './img/linkedin.svg'
 import insta from './img/insta.svg'
-import snapchat from './img/snapchat.svg'
 import ResearchCard from './ResearchCard'
 import News from './News.js'
 import Contact from './Contact.js'
+import heroPage from './img/heroPage.svg'
+import asteriskblbg from './img/asteriskblbg.svg'
+
 
 
 export default function App() {
@@ -60,9 +63,7 @@ return (
             <div>
                 <img src={asterisk} alt={"asterisk"}  className="asterisk-menu" /> 
             </div>
-            <div>
-                <img src={circle} alt={"circle"}  className="circle-menu" /> 
-            </div>
+
             
 
 </motion.nav>
@@ -76,7 +77,9 @@ return (
 <div class="blank"><br/><br/></div>
 
 <div class = "page-menu hidden xl:grid grid-cols-6">
-    <div></div> <div></div>
+    <div class = " col-span-2"> 
+    <img src={heroPage} alt={"illustration"} className="pageHero"/> 
+    </div>
                 <Link to="/"> <a className = "PageMenuList">APPROACH</a> </Link>
                 <Link to="/Research"> <a className = "PageMenuList">RESEARCH</a> </Link>
                 <Link to="/News"> <a className = "PageMenuList">LATEST NEWS</a> </Link>
@@ -91,16 +94,18 @@ return (
             </div>
         </div>
 
-        <div class = "pageTitle xl:grid grid-cols-2"> OUR RESEARCH </div> <div></div>
+        <div class = "pageTitle xl:grid grid-cols-2"> 
+        <div> OUR RESEARCH </div> 
+        <div class = "hidden xl:grid">
+        <img src={asteriskblbg} alt={"asterisk"}  className="asterisk-page" />
+        </div>
+        </div>
         
         <div class = "grid grid-cols-1 xl:grid-cols-3 xl:px-60px">
 
         <div class = "full-card xl:px-60px">
         <img src={publications} alt={"publications"}  className="research-card-img" /> 
         <div class = "research-description">
-        <div class = "research-title"> PUBLICATIONS </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare.
-        <br/>  <br/>
         <button class = "basic-button">
         PUBLICATIONS
         </button>
@@ -109,26 +114,20 @@ return (
 
 
         <div class = "full-card xl:px-60px">
-        <img src={research} alt={"research"}  className="research-card-img" /> 
+        <img src={tools} alt={"tools"}  className="research-card-img" /> 
         <div class = "research-description">
-        <div class = "research-title"> RESEARCH AREAS </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare.
-        <br/>  <br/>
         <button class = "basic-button">
-        RESEARCH AREAS
+        TOOLS
         </button>
         </div>
         </div>
 
 
         <div class = "full-card xl:px-60px">
-        <img src={tools} alt={"tools"}  className="research-card-img" /> 
+        <img src={datasets} alt={"datasets"}  className="research-card-img" /> 
         <div class = "research-description">
-        <div class = "research-title"> TOOLS </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut semper felis, ornare imperdiet metus. Curabitur pulvinar nisl at pretium ornare.
-        <br/>  <br/>
         <button class = "basic-button">
-        TOOLS
+        DATASETS
         </button>
         </div>
         </div>
@@ -143,17 +142,12 @@ return (
    
 
     <div class = "socials-footer">
-    <img src={logo} alt={"logo"}  className="logo-footer" /> 
-     <div class = "grid grid-cols-9">
-    <div></div>
-    <div></div>
+    <img src={logobg} alt={"logo"}  className="logo-footer" /> 
+     <div class = "grid grid-cols-4">
     <img src={facebook} alt={"facebook"}  className="socials-icon" /> 
     <img src={youtube} alt={"youtube"}  className="socials-icon" /> 
     <img src={linkedin} alt={"linkedin"}  className="socials-icon" /> 
-    <img src={snapchat} alt={"snapchat"}  className="socials-icon" /> 
     <img src={insta} alt={"insta"}  className="socials-icon" /> 
-    <div></div>
-    <div></div>
     </div>
     </div>
     

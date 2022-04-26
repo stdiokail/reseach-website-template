@@ -51,6 +51,7 @@ body {
   width: 150px;
   display: block;
   padding-bottom: 10%;
+  padding-top: 10%;
 
 }
 
@@ -60,6 +61,7 @@ body {
   margin-left: auto;
   margin-right: 0;
   transition-duration: 0.7s;
+  padding-top: 10%;
 }
 
 .menu-home:hover {
